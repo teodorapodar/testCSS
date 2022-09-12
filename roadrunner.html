@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vezi repede ce face lupul:)</title>
+<style>
+
+body{
+    margin: 0;
+    background-image: linear-gradient(to top,#E1FA66,#E6B34D,#FD745B,#52E38B,#5BB7FD);
+    overflow-y: hidden;
+
+}
+.ziua{
+    height: 80vh;
+    width: 70vw;
+    
+    margin: 5rem auto;
+    background: url('./roadrunnerbackround.jpg');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0,0, 0.4);
+    overflow-x: hidden;
+    
+}
+.suprafata{
+    height: 110px;
+    width: 1200px;
+    background: url('./img.png');
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  
+}
+
+.roadrunner{
+    position: absolute;
+    bottom: 1px;
+    left: 25%;
+   
+ 
+}
+.ziua:hover .roadrunner{
+    animation: coyot 1.5s linear infinite;
+    animation-delay: 1s;
+}
+div img{
+    width: 180px;
+    height: 180px;
+}
+.lup{
+    margin-top: 290px;
+}
+#lup1:hover{
+    height: 300px;
+    
+}
+/*Animatie*/
+@keyframes coyot{
+    100%{
+        transform: translateX(700px);
+    }
+    25%{transform: translateY(-100px);}
+    40%{transform: translateX(0px);}
+    80%{transform: translateY(-150px);}
+    90%{transform: translateX(100px);}
+}
+</style>
+
+
+
+
+</head>
+
+<body>
+    <div class="ziua">
+        <div class="lup">
+            <img id="lup1" src="lup.gif">
+        </div>
+        <div class="suprafata"></div>
+       <div class="roadrunner">
+           <img src="roadrunner3.png">
+       </div>
+    </div>
+
+
+
+
+</body>
+</html>

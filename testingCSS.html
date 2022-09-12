@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 6</title>
+<style>
+
+.tatacerc{
+    background-color: coral;
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+}
+.cerc{
+    background:linear-gradient(to right,red,pink);
+    width: 20%;
+    height: 20%;
+    border-radius: 10%;
+    border: 2px solid black;
+    box-shadow: 12px 5px 0 0 rgb(148, 123, 123);
+    
+}
+
+.tatacerc:hover .cerc{
+    transform: translateX(100%) rotate(50%);
+    animation-name: minge;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards infinite alternate;
+    transform: skewY(35deg);
+}
+@keyframes minge{
+    10%{transform: translateY(300px);}
+    25%{transform: translateX(100px) skewX(-35deg);}
+    50%{transform: translateY(400px) skewY(45deg);}
+    80%{transform: translateX(200px) skewX(-25deg);}
+    90%{transform: translateY(420px) skewY(40deg);}
+    100%{transform: translateX(500px) skewX(-50deg);}
+    }
+    
+
+   
+.tatapatrat{
+    background:linear-gradient(#AD3937,#FA4543,#36FAE0,#AD6F15,#FAA52A);
+    width: 500px;
+    height: 500px;
+    left: 35%;
+   position: absolute;
+   z-index: -1;
+}
+.tatapatrat img{ width: 100px;
+    height: 100px;
+    transform: translateX(400px);
+}
+.tatapatrat:hover img{
+
+    animation: ball 10s infinite;
+    
+}
+@keyframes ball{
+    25%{transform: translateY(150px);}
+    75%{transform: translateX(200px);}
+    85%{transform: translateY(300px);}
+    99%{transform: translateX(500px);}
+}
+
+
+
+
+
+.roadgun{
+    background-color: blue;
+    margin-top: 600px;
+    float: right;
+    z-index: -1;
+    width: 800px;
+    height: 300px;
+    border-radius: 10%;
+}
+.roadgun img{
+    float: right;
+}
+.glont{
+    background: linear-gradient(to left,grey,black);
+    width: 45px;
+    height: 50px;
+    margin-top: 120px;
+    border-radius: 100%;
+    z-index: 1;
+   
+}
+.glont:hover{
+    animation-name: glont;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes glont{
+     0%{
+        transform: translateX(500px);
+    }
+    25%{
+        transform: translateX(200px) translateY(-150px);
+    }
+    55%{transform: translateX(300px) translateY(-180px); }
+}
+  
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="tatacerc">
+   
+    <div class="cerc">
+    </div>
+    </div>
+
+
+
+    
+</div>
+<div class="tatapatrat">
+       <img src="football.png">
+</div>
+
+<div class="roadgun">
+    <img src="roadgun.jpg">
+    <div class="glont"></div>
+</div>
+
+
+ 
+
+</body>
+</html>
